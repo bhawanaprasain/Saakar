@@ -9,7 +9,7 @@ function Footer(){
                             <div className="col-md">
                             <div className="ftco-footer-widget mb-4">
                             <h2 className="ftco-heading-2">About</h2>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            <p>This is a project by Engineers of WRC, also known as Pashchimanchal Campus.Hope you like it!!</p>
                             <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
                                 <li className="ftco-animate"><a href="#"><span className="icon-twitter"></span></a></li>
                                 <li className="ftco-animate"><a href="#"><span className="icon-facebook"></span></a></li>
@@ -48,9 +48,9 @@ function Footer(){
                                 <h2 className="ftco-heading-2">Have a Questions?</h2>
                                 <div className="block-23 mb-3">
                                 <ul>
-                                    <li><span className="icon icon-map-marker"></span><span className="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                                    <li><a href="#"><span className="icon icon-phone"></span><span className="text">+2 392 3929 210</span></a></li>
-                                    <li><a href="#"><span className="icon icon-envelope"></span><span className="text">info@yourdomain.com</span></a></li>
+                                    <li><span className="icon icon-map-marker"></span><span className="text">Lamachaur-14, Pokhara, Nepal</span></li>
+                                    <li><a href="#"><span className="icon icon-phone"></span><span className="text">+977-9864421055, +977-9864421474</span></a></li>
+                                    <li><a href="#"><span className="icon icon-envelope"></span><span className="text">startup.wrc@gmail.com</span></a></li>
                                 </ul>
                                 </div>
                             </div>
