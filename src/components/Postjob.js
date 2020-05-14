@@ -15,7 +15,7 @@ class PostJob extends Component{
             <div>
                <Header />
                <FindJobs />
-              <Jobcategories />
+                <Jobcategories />
               <RecentJobs />
               <Subscription />
               <Footer />

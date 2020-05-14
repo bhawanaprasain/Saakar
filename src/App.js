@@ -21,7 +21,6 @@ function App() {
         <Route path="/subscription" exact component={Subscription}></Route>
         <Route path="/contact" exact component={Contact}></Route>
         <Route path="/postjob" exact component={Postjob}></Route>
-        <Route path="/categories" exact component={Jobcategories}></Route>
 
 
 

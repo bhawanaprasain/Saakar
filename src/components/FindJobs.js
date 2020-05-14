@@ -126,7 +126,7 @@ function FindJobs(){
 					</div>
 				</section>
 
-    <Jobcategories />
+   
 
         </div>
     )

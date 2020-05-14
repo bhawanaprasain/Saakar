@@ -9,13 +9,13 @@ function RecentJobs(){
 				<div class="row">
 					<div class="col-md-12">
 						<div class="row justify-content-center pb-3">
-		          <div class="col-md-12 heading-section ftco-animate">
+		          <div class="col-md-12 heading-section ftco-animate fadeInUp ftco-animated">
 		          	<span class="subheading">Recently Added Jobs</span>
 		            <h2 class="mb-4">Hot Jobs</h2>
 		          </div>
 		        </div>
 						<div class="row">
-							<div class="col-md-12 ftco-animate">
+							<div class="col-md-12 ftco-animate fadeInUp ftco-animated">
 		            <div class="job-post-item py-4 d-block d-lg-flex align-items-center">
 		              <div class="one-third mb-4 mb-md-0">
 		                <div class="job-post-item-header d-flex align-items-center">
@@ -41,7 +41,7 @@ function RecentJobs(){
 		            </div>
 		          </div>
 
-							<div class="col-md-12 ftco-animate">
+							<div class="col-md-12 ftco-animate fadeInUp ftco-animated">
 		            <div class="job-post-item py-4 d-block d-lg-flex align-items-center">
 		              <div class="one-third mb-4 mb-md-0">
 		                <div class="job-post-item-header d-flex align-items-center">
@@ -67,7 +67,7 @@ function RecentJobs(){
 		            </div>
 		          </div>
 
-		          <div class="col-md-12 ftco-animate">
+		          <div class="col-md-12 ftco-animate fadeInUp ftco-animated">
 		            <div class="job-post-item py-4 d-block d-lg-flex align-items-center">
 		              <div class="one-third mb-4 mb-md-0">
 		                <div class="job-post-item-header d-flex align-items-center">
@@ -93,7 +93,7 @@ function RecentJobs(){
 		            </div>
 		          </div>
 
-		          <div class="col-md-12 ftco-animate">
+		          <div class="col-md-12 ftco-animate fadeInUp ftco-animated">
 		            <div class="job-post-item py-4 d-block d-lg-flex align-items-center">
 		              <div class="one-third mb-4 mb-md-0">
 		                <div class="job-post-item-header d-flex align-items-center">
@@ -119,7 +119,7 @@ function RecentJobs(){
 		            </div>
 		          </div>
 
-		          <div class="col-md-12 ftco-animate">
+		          <div class="col-md-12 ftco-animate fadeInUp ftco-animated">
 		            <div class="job-post-item py-4 d-block d-lg-flex align-items-center">
 		              <div class="one-third mb-4 mb-md-0">
 		                <div class="job-post-item-header d-flex align-items-center">
@@ -145,7 +145,7 @@ function RecentJobs(){
 		            </div>
 		          </div>
 
-		         	<div class="col-md-12 ftco-animate">
+		         	<div class="col-md-12 ftco-animate fadeInUp ftco-animated">
 		            <div class="job-post-item py-4 d-block d-lg-flex align-items-center">
 		              <div class="one-third mb-4 mb-md-0">
 		                <div class="job-post-item-header d-flex align-items-center">
@@ -171,7 +171,7 @@ function RecentJobs(){
 		            </div>
 		          </div>
 
-		          <div class="col-md-12 ftco-animate">
+		          <div class="col-md-12 ftco-animate fadeInUp ftco-animated">
 		            <div class="job-post-item py-4 d-block d-lg-flex align-items-center">
 		              <div class="one-third mb-4 mb-md-0">
 		                <div class="job-post-item-header d-flex align-items-center">
@@ -197,7 +197,7 @@ function RecentJobs(){
 		            </div>
 		          </div>
 
-		          <div class="col-md-12 ftco-animate">
+		          <div class="col-md-12 ftco-animate fadeInUp ftco-animated">
 		            <div class="job-post-item py-4 d-block d-lg-flex align-items-center">
 		              <div class="one-third mb-4 mb-md-0">
 		                <div class="job-post-item-header d-flex align-items-center">
@@ -223,7 +223,7 @@ function RecentJobs(){
 		            </div>
 		          </div>
 
-		          <div class="col-md-12 ftco-animate">
+		          <div class="col-md-12 ftco-animate fadeInUp ftco-animated">
 		            <div class="job-post-item py-4 d-block d-lg-flex align-items-center">
 		              <div class="one-third mb-4 mb-md-0">
 		                <div class="job-post-item-header d-flex align-items-center">

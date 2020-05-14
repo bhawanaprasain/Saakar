@@ -13,9 +13,9 @@ function Home(){
             <Header />
             <FindJobs />
             <WhySakar />
-            <Jobcategories />
-            <Subscription />
+            <Jobcategories/>
             <RecentJobs />
+            <Subscription />
             <Footer/>
         </div>
     )
