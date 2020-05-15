@@ -6,7 +6,7 @@ import "../styles/postjob.css"
 import Jobcategories from "./Jobcategories"
 import FindJobs from "./FindJobs"
 import RecentJobs from "./RecentJobs"
-
+import JobForm from "./JobForm"
 
 class PostJob extends Component{
 
@@ -16,6 +16,7 @@ class PostJob extends Component{
                <Header />
                <FindJobs />
                 <Jobcategories />
+                <JobForm />
               <RecentJobs />
               <Subscription />
               <Footer />
