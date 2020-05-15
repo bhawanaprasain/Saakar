@@ -1,5 +1,5 @@
 import React from "react"
-
+import {Link} from "react-router-dom"
 
 function Header(){
 
@@ -14,25 +14,24 @@ function Header(){
 
                 <div className="collapse navbar-collapse" id="ftco-nav">
                   <ul className="navbar-nav ml-auto">
-                    <li className="nav-item"><a href="index.html" className="nav-link">Home</a></li>
-                    <li className="nav-item"><a href="about.html" className="nav-link">About</a></li>
-                    <li className="nav-item"><a href="candidates.html" className="nav-link">Canditates</a></li>
-                    <li className="nav-item"><a href="blog.html" className="nav-link">Blog</a></li>
-                    <li className="nav-item"><a href="contact.html" className="nav-link">Contact</a></li>
-                    <li className="nav-item cta mr-md-1"><a href="new-post.html" className="nav-link">Post a Job</a></li>
-                    <li className="nav-item cta cta-colored"><a href="job-post.html" className="nav-link">Want a Job</a></li>
+                    <li className="nav-item"><Link to="/" className="nav-link">Home</Link></li>
+                    <li className="nav-item"><Link to="/about" className="nav-link">About</Link></li>
+                    <li className="nav-item"><Link to="/blog" className="nav-link">Blog</Link></li>
+                    <li className="nav-item"><Link to="/contact" className="nav-link">Contact</Link></li>
+                    <li className="nav-item cta mr-md-1"><Link to="/login" className="nav-link">Post a Job</Link></li>
+                    <li className="nav-item cta cta-colored"><Link to="/findjob" className="nav-link">Want a Job</Link></li>
                   </ul>
                 </div>
               </div>
         </nav>
 
-        <div class="hero-wrap hero-wrap-2" data-stellar-background-ratio="0.5">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row no-gutters slider-text align-items-end justify-content-start">
-                    <div class="col-md-8 ftco-animate text-center text-md-left mb-5">
-                        <p class="breadcrumbs mb-0"><span class="mr-3"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Contact</span></p>
-                        <h1 class="mb-3 bread">Contact Us</h1>
+        <div className="hero-wrap hero-wrap-2" data-stellar-background-ratio="0.5">
+                <div className="overlay"></div>
+                <div className="container">
+                    <div className="row no-gutters slider-text align-items-end justify-content-start">
+                    <div className="col-md-8 ftco-animate text-center text-md-left mb-5">
+                        <p className="breadcrumbs mb-0"><span className="mr-3"><a href="index.html">Home <i className="ion-ios-arrow-forward"></i></a></span> <span>Contact</span></p>
+                        <h1 className="mb-3 bread">Contact Us</h1>
                     </div>
                     </div>
                 </div>

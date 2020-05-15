@@ -18,16 +18,16 @@ function Contact(){
                         </div>
                         <div class="w-100"></div>
                         <div class="col-md-3">
-                            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                            <p><span>Address:</span>Lamachaur, Pokhara</p>
                         </div>
                         <div class="col-md-3">
-                            <p><span>Phone:</span> <a href="#">+ 1235 2355 98</a></p>
+                            <p><span>Phone:</span> <a href="#">+977-9864421055</a></p>
                         </div>
                         <div class="col-md-3">
-                            <p><span>Email:</span> <a href="#">info@yoursite.com</a></p>
+                            <p><span>Email:</span> <a href="#">startup.wrc@gmail.com</a></p>
                         </div>
                         <div class="col-md-3">
-                            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+                            <p><span>Website</span> <a href="#">saakar.com</a></p>
                         </div>
                     </div>
                     <div class="row block-9">

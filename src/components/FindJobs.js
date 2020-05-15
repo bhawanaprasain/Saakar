@@ -1,47 +1,50 @@
 import React from "react"
 import Header from "./Header"
 import Jobcategories from "./Jobcategories"
+import RecentJobs from "./RecentJobs"
+import Footer from "./Footer"
+import Subscription from "./Subscription"
 
 
 function FindJobs(){
 
     return(
         <div>
-            
-				<section class="ftco-section bg-light">
-					<div class="container">
-						<div class="row">
-							<div class="ftco-search">
-									<div class="row">
-							<div class="col-md-12 nav-link-wrap">
-								<div class="nav nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-								<a class="nav-link active mr-md-1" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Find a Job</a>
+				<Header />
+				<section className="ftco-section bg-light">
+					<div className="container">
+						<div className="row">
+							<div className="ftco-search">
+									<div className="row">
+							<div className="col-md-12 nav-link-wrap">
+								<div className="nav nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+								<a className="nav-link active mr-md-1" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Find a Job</a>
 
-								<a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Find a Candidate</a>
+								<a className="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Find a Candidate</a>
 
 								</div>
 							</div>
-							<div class="col-md-12 tab-wrap">
+							<div className="col-md-12 tab-wrap">
 								
-								<div class="tab-content p-4" id="v-pills-tabContent">
+								<div className="tab-content p-4" id="v-pills-tabContent">
 
-								<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
-									<form action="#" class="search-job">
-										<div class="row no-gutters">
-											<div class="col-md mr-md-2">
-												<div class="form-group">
-													<div class="form-field">
-														<div class="icon"><span class="icon-briefcase"></span></div>
-														<input type="text" class="form-control" placeholder="eg. Garphic. Web Developer" />
+								<div className="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
+									<form action="#" className="search-job">
+										<div className="row no-gutters">
+											<div className="col-md mr-md-2">
+												<div className="form-group">
+													<div className="form-field">
+														<div className="icon"><span className="icon-briefcase"></span></div>
+														<input type="text" className="form-control" placeholder="eg. Garphic. Web Developer" />
 													</div>
 												</div>
 											</div>
-											<div class="col-md mr-md-2">
-												<div class="form-group">
-													<div class="form-field">
-														<div class="select-wrap">
-													<div class="icon"><span class="ion-ios-arrow-down"></span></div>
-													<select name="" id="" class="form-control">
+											<div className="col-md mr-md-2">
+												<div className="form-group">
+													<div className="form-field">
+														<div className="select-wrap">
+													<div className="icon"><span className="ion-ios-arrow-down"></span></div>
+													<select name="" id="" className="form-control">
 														<option value="">Category</option>
 														<option value="">Full Time</option>
 														<option value="">Part Time</option>
@@ -53,18 +56,18 @@ function FindJobs(){
 													</div>
 												</div>
 											</div>
-											<div class="col-md mr-md-2">
-												<div class="form-group">
-													<div class="form-field">
-														<div class="icon"><span class="icon-map-marker"></span></div>
-														<input type="text" class="form-control" placeholder="Location" />
+											<div className="col-md mr-md-2">
+												<div className="form-group">
+													<div className="form-field">
+														<div className="icon"><span className="icon-map-marker"></span></div>
+														<input type="text" className="form-control" placeholder="Location" />
 													</div>
 												</div>
 											</div>
-											<div class="col-md">
-												<div class="form-group">
-													<div class="form-field">
-														<button type="submit" class="form-control btn btn-secondary">Search</button>
+											<div className="col-md">
+												<div className="form-group">
+													<div className="form-field">
+														<button type="submit" className="form-control btn btn-secondary">Search</button>
 													</div>
 												</div>
 											</div>
@@ -72,23 +75,23 @@ function FindJobs(){
 									</form>
 								</div>
 
-								<div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-performance-tab">
-									<form action="#" class="search-job">
-										<div class="row">
-											<div class="col-md">
-												<div class="form-group">
-													<div class="form-field">
-														<div class="icon"><span class="icon-user"></span></div>
-														<input type="text" class="form-control" placeholder="eg. Adam Scott"/>
+								<div className="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-performance-tab">
+									<form action="#" className="search-job">
+										<div className="row">
+											<div className="col-md">
+												<div className="form-group">
+													<div className="form-field">
+														<div className="icon"><span className="icon-user"></span></div>
+														<input type="text" className="form-control" placeholder="eg. Adam Scott"/>
 													</div>
 												</div>
 											</div>
-											<div class="col-md">
-												<div class="form-group">
-													<div class="form-field">
-														<div class="select-wrap">
-													<div class="icon"><span class="ion-ios-arrow-down"></span></div>
-													<select name="" id="" class="form-control">
+											<div className="col-md">
+												<div className="form-group">
+													<div className="form-field">
+														<div className="select-wrap">
+													<div className="icon"><span className="ion-ios-arrow-down"></span></div>
+													<select name="" id="" className="form-control">
 														<option value="">Category</option>
 														<option value="">Full Time</option>
 														<option value="">Part Time</option>
@@ -100,18 +103,18 @@ function FindJobs(){
 													</div>
 												</div>
 											</div>
-											<div class="col-md">
-												<div class="form-group">
-													<div class="form-field">
-														<div class="icon"><span class="icon-map-marker"></span></div>
-														<input type="text" class="form-control" placeholder="Location" />
+											<div className="col-md">
+												<div className="form-group">
+													<div className="form-field">
+														<div className="icon"><span className="icon-map-marker"></span></div>
+														<input type="text" className="form-control" placeholder="Location" />
 													</div>
 												</div>
 											</div>
-											<div class="col-md">
-												<div class="form-group">
-													<div class="form-field">
-														<button type="submit" class="form-control btn btn-secondary">Search</button>
+											<div className="col-md">
+												<div className="form-group">
+													<div className="form-field">
+														<button type="submit" className="form-control btn btn-secondary">Search</button>
 													</div>
 												</div>
 											</div>
@@ -125,8 +128,10 @@ function FindJobs(){
 						</div>
 					</div>
 				</section>
-
-   
+				<Jobcategories />
+				<RecentJobs />
+				<Subscription />
+				<Footer />
 
         </div>
     )

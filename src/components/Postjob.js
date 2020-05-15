@@ -4,8 +4,6 @@ import Footer from "./Footer"
 import Subscription from "./Subscription"
 import "../styles/postjob.css"
 import Jobcategories from "./Jobcategories"
-import FindJobs from "./FindJobs"
-import RecentJobs from "./RecentJobs"
 import JobForm from "./JobForm"
 
 class PostJob extends Component{
@@ -14,10 +12,9 @@ class PostJob extends Component{
         return(
             <div>
                <Header />
-               <FindJobs />
-                <Jobcategories />
                 <JobForm />
-              <RecentJobs />
+                <Jobcategories />
+           
               <Subscription />
               <Footer />
             </div>
