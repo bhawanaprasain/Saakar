@@ -1,5 +1,6 @@
 import React from "react"
 import {Link} from "react-router-dom"
+import "../styles/header.css"
 
 function Header(){
 
@@ -7,7 +8,8 @@ function Header(){
       <div>
           <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
               <div className="container">
-                <a className="navbar-brand" href="index.html">Sakar</a>
+                
+                <a className="navbar-brand sakarlogo" href="index.html"></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="oi oi-menu"></span> Menu
                 </button>

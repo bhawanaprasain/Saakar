@@ -1,0 +1,7 @@
+.sakarlogo{
+    background-image: url("../images/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:70px;
+    width:140px;
+}
