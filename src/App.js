@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {setState} from 'react';
 import {BrowserRouter as Router, Route} from "react-router-dom"
 import Postjob from "./components/Postjob"
 import Contact from './components/Contact';
@@ -12,6 +12,7 @@ import About from "./components/About"
 
 
 function App() {
+
   return (
     <div className="App">
       <Router>
