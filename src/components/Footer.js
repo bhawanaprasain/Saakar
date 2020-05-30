@@ -27,7 +27,7 @@ function Footer(){
                                 <li><a href="#" className="py-2 d-block">Advance Skill Search</a></li>
                                 <li><a href="#" className="py-2 d-block">Recruiting Service</a></li>
                                 <li><a href="#" className="py-2 d-block">Blog</a></li>
-                                <li><a href="#" className="py-2 d-block">Faq</a></li>
+                                <li><a href="#" className="py-2 d-block">FAQ</a></li>
                             </ul>
                             </div>
                         </div>
@@ -39,7 +39,7 @@ function Footer(){
                                 <li><a href="#" className="py-2 d-block">Register</a></li>
                                 <li><a href="#" className="py-2 d-block">Post Your Skills</a></li>
                                 <li><a href="#" className="py-2 d-block">Job Search</a></li>
-                                <li><a href="#" className="py-2 d-block">Emploer Search</a></li>
+                                <li><a href="#" className="py-2 d-block">Employer Search</a></li>
                             </ul>
                             </div>
                         </div>

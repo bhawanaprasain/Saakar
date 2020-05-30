@@ -10,7 +10,7 @@ function Subscription(){
                         <div className="row d-flex justify-content-center">
                             <div className="col-md-12 text-center heading-section heading-section-white">
                             <h2>Subcribe to our Newsletter</h2>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+                            <p>Get regular updates about trending jobs, work progress and stay tuned for job that fits your skills</p>
                             </div>
                             <div className="row d-flex justify-content-center mt-4 mb-4">
                                 <div className="col-md-12">
