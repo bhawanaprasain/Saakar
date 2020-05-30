@@ -66,8 +66,8 @@ class JobForm extends Component{
                                     <form action="#" className="p-5 bg-white">
                                         <div className="row form-group">
                                             <div className="col-md-12 mb-3 mb-md-0">
-                                                <label className="font-weight-bold" htmlFor="fullname">Job Title</label>
-                                                <input type="text" id="fullname" className="form-control" placeholder="eg. Professional UI/UX Designer"  name="title" onChange={this.handleInput} /><br/>
+                                                <label className="font-weight-bold" htmlFor="fullname">Job  Category</label>
+                                                <input type="text" id="fullname" className="form-control" placeholder="eg. Graphics designer"  name="title" onChange={this.handleInput} /><br/>
                                             </div>
                                         </div>
                                         <div className="row form-group">
@@ -78,70 +78,12 @@ class JobForm extends Component{
                                                 <textarea name="" className="form-control" id="" cols="50" rows="7" name="description" onChange={this.handleInput}></textarea><br/>
                                             </div>
                                         </div>
-
                                         <div className="row form-group">
-                                            <div className="col-md-12"><label className="font-weight-bold">Job Type</label></div>
-                                                <div className="col-md-12 mb-3 mb-md-0">
-                                                    <label htmlFor="option-job-type-1">
-                                                        <input type="radio" id="option-job-type-1" name="job-type" name="category" onChange={this.handleInput}/> Full Time
-                                                    </label>
-                                                </div>
-                                                <div className="col-md-12 mb-3 mb-md-0">
-                                                    <label htmlFor="option-job-type-2">
-                                                        <input type="radio" id="option-job-type-2" name="job-type" name="category" onChange={this.handleInput}/> Part Time
-                                                    </label>
-                                                </div>
-
-                                                <div className="col-md-12 mb-3 mb-md-0">
-                                                <label htmlFor="option-job-type-3">
-                                                    <input type="radio" id="option-job-type-3" name="job-type" name="category" onChange={this.handleInput}/> Freelance
-                                                </label ><br/><br/>
-                                                </div>
-                                                <div className="row form-group">
-
-                                                    <div className="col-md-12">
-                                                        <label className="font-weight-bold">If you have any sample file please attach file.</label><br/>
-                                                        <input type="submit" value="Attach file" className="btn btn-primary  py-2 px-5" /><br/><br/>
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-12 mb-3 mb-md-0">
-                                                    <label htmlFor="option-job-type-4">
-                                                        <input type="radio" id="option-job-type-4" name="job-type" name="category" onChange={this.handleInput}/> Internship
-                                                    </label>
-                                                </div>
-
-                                                <div className="col-md-12 mb-3 mb-md-0">
-                                                    <label htmlFor="option-job-type-4">
-                                                        <input type="radio" id="option-job-type-4" name="job-type" name="category" onChange={this.handleInput}/> Temporary
-                                                    </label>
-                                                </div>
-
+                                            <div className="col-md-12">
+                                                <label className="font-weight-bold">If you have any sample file please attach file.</label><br/>
+                                                <input type="submit" value="Attach file" className="btn btn-primary  py-2 px-5" /><br/><br/>
+                                            </div>
                                         </div>
-
-
-                                        <div className="row form-group">
-                                            <div className="col-md-12"> <label className="font-weight-bold"> Mention the level of expertise you are looking for</label></div>
-                                                <div className="col-md-12 mb-3 mb-md-0">
-                                                    <label htmlFor="option-job-category-1">
-                                                        <input type="radio" id="option-job-category-1" name="job-category" name="category" onChange={this.handleInput}/> Basic
-                                                    </label>
-                                                </div>
-                                                <div className="col-md-12 mb-3 mb-md-0">
-                                                    <label htmlFor="option-job-category-2">
-                                                        <input type="radio" id="option-job-category-2" name="job-category" name="category" onChange={this.handleInput}/> Intermediate
-                                                    </label>
-                                                </div>
-
-                                                <div className="col-md-12 mb-3 mb-md-0">
-                                                <label htmlFor="option-job-category-3">
-                                                    <input type="radio" id="option-job-category-3" name="job-category" name="category" onChange={this.handleInput}/> Expert
-                                                </label >
-                                                </div>
-
-                                        </div>
-
-
                                         <div className="row form-group mb-4">
                                             <div className="col-md-12"> <label className="font-weight-bold">Mention the budget for this job</label></div>
                                                 <div className="col-md-12 mb-3 mb-md-0">
@@ -149,6 +91,12 @@ class JobForm extends Component{
                                                 </div>
                                         </div>
                                         
+                                        <div className="row form-group mb-4">
+                                            <div className="col-md-12"> <label className="font-weight-bold">Mention delivery time for this order</label></div>
+                                                <div className="col-md-12 mb-3 mb-md-0">
+                                                    <input  className="form-control" placeholder="" name="time" onChange={this.handleInput}/>
+                                                </div>
+                                        </div>
 
                                     
 
