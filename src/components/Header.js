@@ -21,7 +21,7 @@ function Header(){
                     <li className="nav-item"><Link to="/about" className="nav-link">About</Link></li>
                     <li className="nav-item"><Link to="/blog" className="nav-link">Blog</Link></li>
                     <li className="nav-item"><Link to="/contact" className="nav-link">Contact</Link></li>
-                    <li className="nav-item cta mr-md-1"><Link to="/login" className="nav-link">Post a Job</Link></li>
+                    <li className="nav-item cta mr-md-1"><Link to="/postjob" className="nav-link">Post a Job</Link></li>
                     <li className="nav-item cta cta-colored"><Link to="/findjob" className="nav-link">Want a Job</Link></li>
                   </ul>
                 </div>
