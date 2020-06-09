@@ -42,7 +42,7 @@ class JobForm extends Component{
         }
         
         axios({
-            method: "post",
+            method: "",
             url: "",
             data: jobdata
 
