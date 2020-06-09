@@ -8,11 +8,10 @@ class JobForm extends Component{
         this.state = {
             title: "",
             description:"",
-            category:"",
+            categories:"",
             budget:"",
-            location: "",
-            description: "",
-
+            userId:"",
+            time:""
           
         }
 
@@ -25,29 +24,26 @@ class JobForm extends Component{
             [e.target.name]: e.target.value
     
         })
-
-    
     }
-    handleSubmit(){
-        
+    handleSubmit(e){
+        e.preventDefault();
         
         const jobdata ={
             title: this.state.title,
+            categories:this.state.categories,
             description:this.state.description,
-            category:this.state.category,
             budget:this.state.budget,
-            location: this.state.location,
-            description: this.state.description,
-
+            userId: this.state.userId,
+            time: this.state.time
         }
         
         axios({
-            method: "",
-            url: "",
+            method: "post",
+            url: "http://sakaar-api.herokuapp.com/job/create",
             data: jobdata
 
         }).then((response)=>{
-            alert(response);
+            alert(response.data);
             
         })
         .catch(function(error){
@@ -66,8 +62,12 @@ class JobForm extends Component{
                                     <form action="#" className="p-5 bg-white">
                                         <div className="row form-group">
                                             <div className="col-md-12 mb-3 mb-md-0">
+                                                <label className="font-weight-bold" htmlFor="fullname">Title</label>
+                                                <input type="text" id="fullname" className="form-control" placeholder="eg. Graphics designer, Web Designinng"  name="title" onChange={this.handleInput} /><br/>
+                                            </div>
+                                            <div className="col-md-12 mb-3 mb-md-0">
                                                 <label className="font-weight-bold" htmlFor="fullname">Job  Category</label>
-                                                <input type="text" id="fullname" className="form-control" placeholder="eg. Graphics designer"  name="title" onChange={this.handleInput} /><br/>
+                                                <input type="text" id="fullname" className="form-control" placeholder="eg. Maya, After Effect, Python, Django"  name="categories" onChange={this.handleInput} /><br/>
                                             </div>
                                         </div>
                                         <div className="row form-group">
@@ -75,19 +75,19 @@ class JobForm extends Component{
                                                 <label className="font-weight-bold">Describe the details of service you are looking for. Mention all minute details.</label>
                                             </div>
                                             <div className="col-md-12 mb-3 mb-md-0">
-                                                <textarea name="" className="form-control" id="" cols="50" rows="7" name="description" onChange={this.handleInput}></textarea><br/>
+                                                <textarea className="form-control" id="" cols="50" rows="7" name="description" onChange={this.handleInput}></textarea><br/>
                                             </div>
                                         </div>
-                                        <div className="row form-group">
+                                        {/* <div className="row form-group">
                                             <div className="col-md-12">
                                                 <label className="font-weight-bold">If you have any sample file please attach file.</label><br/>
                                                 <input type="submit" value="Attach file" className="btn btn-primary  py-2 px-5" /><br/><br/>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         <div className="row form-group mb-4">
                                             <div className="col-md-12"> <label className="font-weight-bold">Mention the budget for this job</label></div>
                                                 <div className="col-md-12 mb-3 mb-md-0">
-                                                    <input  className="form-control" placeholder="" name="budget" onChange={this.handleInput}/>
+                                                    <input type="text" className="form-control" placeholder="" name="budget" onChange={this.handleInput}/>
                                                 </div>
                                         </div>
                                         
@@ -95,6 +95,12 @@ class JobForm extends Component{
                                             <div className="col-md-12"> <label className="font-weight-bold">Mention delivery time for this order</label></div>
                                                 <div className="col-md-12 mb-3 mb-md-0">
                                                     <input  className="form-control" placeholder="" name="time" onChange={this.handleInput}/>
+                                                </div>
+                                        </div>
+                                        <div className="row form-group mb-4">
+                                            <div className="col-md-12"> <label className="font-weight-bold">UserId</label></div>
+                                                <div className="col-md-12 mb-3 mb-md-0">
+                                                    <input type="text" className="form-control" placeholder="" name="userId" onChange={this.handleInput}/>
                                                 </div>
                                         </div>
 

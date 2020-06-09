@@ -35,10 +35,10 @@ class Login extends Component{
             email:this.state.email,
 
         }
-    console.log(userdata);
+    // console.log(userdata);
     axios({
         method: "post",
-        url:"mongodb+srv://startup11:startup11@startup-cluster-jeh4j.mongodb.net/test",
+        url:"http://sakaar-api.herokuapp.com/user/signup",
         data: userdata
 
     }).then((response)=>{
@@ -67,18 +67,18 @@ class Login extends Component{
                                         </div>
 
                                         <div className="row form-group mb-4">
+                                            <div className="col-md-12"><p className="email">Email</p></div>
+                                            <div className="col-md-12 mb-3 mb-md-0">
+                                                <input type="email" className="form-control" placeholder="" name="email" onChange={this.handleInput} />
+                                            </div>
+                                        </div>
+                                        <div className="row form-group mb-4">
                                             <div className="col-md-12"><p className="password">Password</p></div>
                                             <div className="col-md-12 mb-3 mb-md-0">
                                                 <input type="password" className="form-control" placeholder="" name="password" onChange={this.handleInput} />
                                             </div>
                                         </div>
 
-                                        <div className="row form-group mb-4">
-                                            <div className="col-md-12"><p className="email">Email</p></div>
-                                            <div className="col-md-12 mb-3 mb-md-0">
-                                                <input type="email" className="form-control" placeholder="" name="email" onChange={this.handleInput} />
-                                            </div>
-                                        </div>
 
                                         <div className="row form-group">
                                             <div className="col-md-12">
