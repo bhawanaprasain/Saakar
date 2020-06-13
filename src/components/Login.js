@@ -59,12 +59,6 @@ class Login extends Component{
                         <div className="row">
                             <div className="col-md-12 col-lg-8 mb-5">
                                     <form action="#" className="p-5 bg-white">
-                                        <div className="row form-group mb-4">
-                                            <div className="col-md-12"><p className="username">Username</p></div>
-                                            <div className="col-md-12 mb-3 mb-md-0">
-                                                <input type="text" className="form-control" placeholder="" name="name" onChange={this.handleInput}  />
-                                            </div>
-                                        </div>
 
                                         <div className="row form-group mb-4">
                                             <div className="col-md-12"><p className="email">Email</p></div>

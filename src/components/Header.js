@@ -8,7 +8,7 @@ function Header(){
     return(
       <div>
           <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-              <div className="container">
+              <div className="container-fluid">
                 
                 <a className="navbar-brand sakarlogo" href="index.html"></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,6 +23,15 @@ function Header(){
                     <li className="nav-item"><Link to="/contact" className="nav-link">Contact</Link></li>
                     <li className="nav-item cta mr-md-1"><Link to="/postjob" className="nav-link">Post a Job</Link></li>
                     <li className="nav-item cta cta-colored"><Link to="/findjob" className="nav-link">Want a Job</Link></li>
+                    <li className="nav-item dropdown">
+                      <Link to="#" className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i className="fa fa-user-circle-o" aria-hidden="true"></i>
+                      </Link>
+                      <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <Link to="/login" className="dropdown-item">Login</Link>
+                        <Link to="/signup" className="dropdown-item">Sign Up</Link>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -32,9 +41,6 @@ function Header(){
           <Searchbar />
         </div>
       </div> 
-
-       
-
     )
 }
 
