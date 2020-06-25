@@ -33,7 +33,6 @@ class JobForm extends Component{
             categories:this.state.categories,
             description:this.state.description,
             budget:this.state.budget,
-            userId: this.state.userId,
             time: this.state.time
         }
         

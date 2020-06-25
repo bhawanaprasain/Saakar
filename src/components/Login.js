@@ -37,8 +37,8 @@ class Login extends Component{
         }
     // console.log(userdata);
     axios({
-        method: "post",
-        url:"http://sakaar-api.herokuapp.com/user/signup",
+        method: "get",
+        url:"",
         data: userdata
 
     }).then((response)=>{
