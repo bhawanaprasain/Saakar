@@ -1,17 +1,19 @@
 import React, { Component } from "react"
 import axios from "axios"
+import Login from './Login'
 
 class JobForm extends Component{
     constructor(){
         super()
-
         this.state = {
             title: "",
             description:"",
             categories:"",
             budget:"",
             userId:"",
-            time:""
+            time:"",
+            login: localStorage.getItem('login') === null? false : true,
+            store: ""
           
         }
 
@@ -51,11 +53,12 @@ class JobForm extends Component{
         })
     }
 
-
     render(){
+        const isLoggedIn = this.state.login
         return(
             <div>
-                <div className="ftco-section bg-light">
+                {isLoggedIn
+                ?<div className="ftco-section bg-light">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12 col-lg-8 mb-5">
@@ -118,6 +121,8 @@ class JobForm extends Component{
                 </div>
                 </div>
                 </div>
+                : <Login />
+                }
             </div>
         )
     }

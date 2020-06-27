@@ -24,18 +24,6 @@ function App() {
         <Route path="/signup" exact component={Signup}></Route>
         <Route path="/blog" exact component={Blog}></Route>
         <Route path="/about" exact component={About}></Route>
-
-
-
-
-
-
-
-
-
-
-
-
       </Router>
       
       

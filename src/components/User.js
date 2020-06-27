@@ -38,17 +38,17 @@ class Login extends Component{
                 password: this.state.password
             }
         })
-         .then(response => {             
+         .then(response => {
+             console.log(response);
+             
              localStorage.setItem('login',JSON.stringify({
                 login: true,
                 token: response.data
              }))
-             this.setState({login: true})
             })
          .catch(err => console.log(err, ""))
     }
     render(){
-        const isLoggedIn = this.state.login
         return(
             <div>
                 <Header />
@@ -74,13 +74,7 @@ class Login extends Component{
 
                                         <div className="row form-group">
                                             <div className="col-md-12">
-                                                <Link to={{
-                                                    pathname: '/postjob',
-                                                    state: {
-                                                        login: isLoggedIn
-                                                    }
-                                                }}
-                                                ><button type="submit" value="Login" className="btn btn-primary  py-2 px-5" onClick={()=>{this.login()}} >Login</button></Link>
+                                                <button type="submit" value="Login" className="btn btn-primary  py-2 px-5" onClick={()=>{this.login()}} >Login</button>
                                             </div>
                                         </div>
 

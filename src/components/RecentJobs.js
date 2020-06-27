@@ -30,7 +30,7 @@ class RecentJobs extends React.Component {
                     <div className="row">
 					{this.state.jobs.map(job => {
 						return (
-							<div className="col-md-12 ftco-animate fadeInUp ftco-animated">
+							<div className="col-md-12 ftco-animate fadeInUp ftco-animated" key={job._id}>
                       <div className="job-post-item py-4 d-block d-lg-flex align-items-center">
                         <div className="one-third mb-4 mb-md-0">
                           <div className="job-post-item-header d-flex align-items-center">
