@@ -12,7 +12,7 @@ class JobForm extends Component{
             budget:"",
             userId:"",
             time:"",
-            login: localStorage.getItem('login') === null? false : true,
+            login: false,
             store: ""
           
         }
@@ -54,11 +54,9 @@ class JobForm extends Component{
     }
 
     render(){
-        const isLoggedIn = this.state.login
         return(
             <div>
-                {isLoggedIn
-                ?<div className="ftco-section bg-light">
+                <div className="ftco-section bg-light">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12 col-lg-8 mb-5">
@@ -121,8 +119,6 @@ class JobForm extends Component{
                 </div>
                 </div>
                 </div>
-                : <Login />
-                }
             </div>
         )
     }
