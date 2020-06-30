@@ -5,7 +5,7 @@ import Footer from "./Footer"
 function Blog (props){
     return(
             <div>
-                <Header isLoggedIn = {props.isLoggedIn}/>
+                <Header isLoggedIn = {props.isLoggedIn} handleLogout = {props.handleLogout}/>
                 <section className="ftco-section bg-light">
                     <div className="container">
                         <div className="row d-flex">

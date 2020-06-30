@@ -11,7 +11,7 @@ class Login extends Component{
         const isLoggedIn = this.props.isLoggedIn
         return(
             <div>
-                <Header isLoggedIn={isLoggedIn}/>
+                <Header isLoggedIn={isLoggedIn} handleLogout = {this.props.handleLogout}/>
                 {!isLoggedIn?
                   <div className="ftco-section bg-light">
                     <div className="container">

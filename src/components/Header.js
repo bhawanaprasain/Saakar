@@ -35,7 +35,7 @@ function Header(props){
                         <Link to="/signup" className="dropdown-item">Sign Up</Link>
                         </div>
                         :
-                        <Link to="/signup" className="dropdown-item">Sign Out</Link>
+                        <Link to="#" className="dropdown-item" onClick={props.handleLogout}>Sign Out</Link>
                       }
                       </div>
                     </li>

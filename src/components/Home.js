@@ -7,11 +7,10 @@ import Jobcategories from "./Jobcategories"
 import RecentJobs from "./RecentJobs"
 
 function Home(props){
-    console.log(props.isLoggedIn, "from Home");
     
     return(
         <div>
-            <Header isLoggedIn={props.isLoggedIn}/>
+            <Header isLoggedIn={props.isLoggedIn} handleLogout = {props.handleLogout}/>
             <WhySakar />
             <Jobcategories/>
             <RecentJobs />

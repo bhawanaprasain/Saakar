@@ -9,7 +9,7 @@ function Contact(props){
 
     return(
         <div>
-            <Header isLoggedIn = {props.isLoggedIn}/>
+            <Header isLoggedIn = {props.isLoggedIn} handleLogout = {props.handleLogout}/>
             <section class="ftco-section contact-section bg-light">
                 <div class="container">
                     <div class="row d-flex mb-5 contact-info">

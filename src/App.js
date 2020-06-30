@@ -18,10 +18,11 @@ class App extends React.Component {
     super(props);
 
     this.state = {
+      // name added for signup
+      name:'',
       email: '',
       password: '',
       login: false,
-      store: null
   }
   }
 
@@ -45,9 +46,14 @@ class App extends React.Component {
             login: true,
             token: response.data
          }))
-         this.setState({login: true})
+         this.setState({
+         login: true,
+         name: this.state.name,
+         email: this.state.email,
+         password: this.state.password
         })
-     .catch(err => console.log(err, "Checkout this errror"))
+        })
+     .catch(err => alert("Invalid username or password."))
     
   }
 
@@ -56,6 +62,44 @@ class App extends React.Component {
       const store = JSON.parse(localStorage.getItem('login'))
       this.setState({login: store.login})
     }
+  }
+
+  logout = () => {
+    if (localStorage.getItem('login')){
+      localStorage.removeItem('login')
+    }
+    this.setState({
+      login: false,
+      name: '',
+      email: '',
+      password: ''
+    })
+  }
+
+  signup = (e) => {
+    e.preventDefault();
+        const userdata = {
+            name: this.state.name,
+            email: this.state.email,
+            password: this.state.password
+        }
+
+
+        axios({
+            method: 'post',
+            url: 'http://sakaar-api.herokuapp.com/user/signup',
+            data: userdata
+        })
+         .then(response => {
+          alert("You Have Successfully Signed Up.Now Login to Continue.")
+          this.setState({
+            login: false,
+            name: this.state.name,
+            email: this.state.email,
+            password: this.state.password
+          })
+          })
+         .catch(err => alert(err))
   }
 
   render() {
@@ -67,23 +111,44 @@ class App extends React.Component {
             path="/"
             exact
             render={(props) => (
-              <Home {...props} isLoggedIn={this.state.login} />
+              <Home
+                {...props}
+                isLoggedIn={this.state.login}
+                handleLogout={this.logout}
+              />
             )}
           />
-          <Route path="/contact" exact 
-          render={props =>(
-            <Contact {...props} isLoggedIn={this.state.login}/>
-          )}
+          <Route
+            path="/contact"
+            exact
+            render={(props) => (
+              <Contact
+                {...props}
+                isLoggedIn={this.state.login}
+                handleLogout={this.logout}
+              />
+            )}
           />
           <Route
             path="/postjob"
             exact
-            render={(props) => <Postjob isLoggedIn={this.state.login} />}
+            render={(props) => (
+              <Postjob
+                isLoggedIn={this.state.login}
+                handleLogout={this.logout}
+              />
+            )}
           />
-          <Route path="/findjob" exact
-          render={props =>(
-            <FindJobs {...props} isLoggedIn={this.state.login} />
-          )}
+          <Route
+            path="/findjob"
+            exact
+            render={(props) => (
+              <FindJobs
+                {...props}
+                isLoggedIn={this.state.login}
+                handleLogout={this.logout}
+              />
+            )}
           />
 
           <Route
@@ -95,24 +160,45 @@ class App extends React.Component {
                 handleLogin={this.login}
                 handleInput={this.inputHandler}
                 isLoggedIn={this.state.login}
+                handleLogout={this.logout}
               />
             )}
           />
 
-          <Route path="/signup" exact
-          render={props =>(
-            <Signup {...props} isLoggedIn={this.state.login} />
-          )} 
+          <Route
+            path="/signup"
+            exact
+            render={(props) => (
+              <Signup
+                {...props}
+                isLoggedIn={this.state.login}
+                handleLogout={this.logout}
+                handleSignup={this.signup}
+                handleInput={this.inputHandler}
+              />
+            )}
           />
-          <Route path="/blog" exact
-          render={props => (
-            <Blog {...props} isLoggedIn={this.state.login} />
-          )}
+          <Route
+            path="/blog"
+            exact
+            render={(props) => (
+              <Blog
+                {...props}
+                isLoggedIn={this.state.login}
+                handleLogout={this.logout}
+              />
+            )}
           />
-          <Route path="/about" exact
-          render={props =>(
-            <About {...props} isLoggedIn={this.state.login}/>
-          )}
+          <Route
+            path="/about"
+            exact
+            render={(props) => (
+              <About
+                {...props}
+                isLoggedIn={this.state.login}
+                handleLogout={this.logout}
+              />
+            )}
           />
         </Router>
       </div>

@@ -34,8 +34,11 @@ class JobForm extends Component{
             budget:this.state.budget,
             time: this.state.time
         }
+        if (localStorage.getItem('login') !== null){
+        var token = JSON.parse(localStorage.getItem('login')).token.token
+        }
+            
 
-        const token = JSON.parse(localStorage.getItem('login')).token.token
         axios({
             method: "post",
             url: "https://sakaar-api.herokuapp.com/job/create",
@@ -47,8 +50,7 @@ class JobForm extends Component{
             }
 
         }).then((response)=>{
-            alert(response.data);
-            
+            alert("Congrats!!! You have posted a job.");
         })
         .catch(function(error){
             alert(error)

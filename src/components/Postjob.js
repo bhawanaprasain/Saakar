@@ -14,7 +14,7 @@ class PostJob extends Component{
     render(){
         return(
             <div>
-               <Header isLoggedIn={this.props.isLoggedIn}/>
+               <Header isLoggedIn={this.props.isLoggedIn} handleLogout = {this.props.handleLogout}/>
                 <JobForm isLoggedIn={this.props.isLoggedIn}/>
                 <Jobcategories />
               <Subscription />

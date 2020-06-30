@@ -6,7 +6,7 @@ function About(props){
 
     return(
         <div>
-            <Header isLoggedIn = {props.isLoggedIn} />
+            <Header isLoggedIn = {props.isLoggedIn} handleLogout = {props.handleLogout}/>
             <section class="ftco-section">
                 <div class="container">
                     <div class="row justify-content-center">
