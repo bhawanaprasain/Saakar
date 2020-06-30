@@ -3,8 +3,8 @@ import {Link} from "react-router-dom"
 import "../styles/header.css"
 import Searchbar from "./Searchbar"
 
-function Header(){
-
+function Header(props){
+    const isLoggedIn = props.isLoggedIn
     return(
       <div>
           <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -28,8 +28,15 @@ function Header(){
                       <i className="fa fa-user-circle-o" aria-hidden="true"></i>
                       </Link>
                       <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <Link to="/login" className="dropdown-item">Login</Link>
+                        {!isLoggedIn
+                        ?
+                        <div>
+                          <Link to="/login" className="dropdown-item">Login</Link>
                         <Link to="/signup" className="dropdown-item">Sign Up</Link>
+                        </div>
+                        :
+                        <Link to="/signup" className="dropdown-item">Sign Out</Link>
+                      }
                       </div>
                     </li>
                   </ul>

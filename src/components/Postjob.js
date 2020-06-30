@@ -7,13 +7,15 @@ import Jobcategories from "./Jobcategories"
 import JobForm from "./JobForm"
 
 class PostJob extends Component{
+    constructor(props){
+        super(props)
+    }
 
     render(){
-        console.log("props", this.props.location);
         return(
             <div>
-               <Header />
-                <JobForm />
+               <Header isLoggedIn={this.props.isLoggedIn}/>
+                <JobForm isLoggedIn={this.props.isLoggedIn}/>
                 <Jobcategories />
               <Subscription />
               <Footer />

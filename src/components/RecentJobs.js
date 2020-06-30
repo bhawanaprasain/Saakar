@@ -7,7 +7,7 @@ class RecentJobs extends React.Component {
 	}
 
 	componentDidMount() {
-		axios.get("http://sakaar-api.herokuapp.com/job/all")
+		axios.get("https://sakaar-api.herokuapp.com/job/all")
 		 .then(response => {
 			 this.setState({jobs: response.data})
 		 })

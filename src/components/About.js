@@ -2,11 +2,11 @@ import React from "react"
 import Header from "./Header"
 import Footer from "./Footer"
 
-function About(){
+function About(props){
 
     return(
         <div>
-            <Header />
+            <Header isLoggedIn = {props.isLoggedIn} />
             <section class="ftco-section">
                 <div class="container">
                     <div class="row justify-content-center">

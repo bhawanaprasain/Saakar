@@ -6,8 +6,8 @@ import Header from "./Header"
 import axios from "axios"
 
 class Signup extends Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
 
         this.state = {
             name: '',
@@ -48,7 +48,7 @@ class Signup extends Component{
 
         return(
             <div>
-                <Header />
+                <Header isLoggedIn = {this.state.isLoggedIn}/>
                   <div className="ftco-section bg-light">
                     <div className="container">
                         <div className="row">

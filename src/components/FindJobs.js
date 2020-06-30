@@ -6,11 +6,11 @@ import Footer from "./Footer"
 import Subscription from "./Subscription"
 
 
-function FindJobs(){
+function FindJobs(props){
 
     return(
         <div>
-				<Header />
+				<Header isLoggedIn = {props.isLoggedIn}/>
 				<section className="ftco-section bg-light">
 					<div className="container">
 						<div className="row">

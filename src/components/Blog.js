@@ -2,10 +2,10 @@ import React from "react"
 import Header from "./Header"
 import Footer from "./Footer"
 
-function Blog (){
+function Blog (props){
     return(
             <div>
-                <Header />
+                <Header isLoggedIn = {props.isLoggedIn}/>
                 <section className="ftco-section bg-light">
                     <div className="container">
                         <div className="row d-flex">
