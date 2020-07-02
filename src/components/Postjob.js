@@ -7,9 +7,6 @@ import Jobcategories from "./Jobcategories"
 import JobForm from "./JobForm"
 
 class PostJob extends Component{
-    constructor(props){
-        super(props)
-    }
 
     render(){
         return(
