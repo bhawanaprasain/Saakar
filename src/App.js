@@ -1,4 +1,4 @@
-import React , {setState} from 'react';
+import React from 'react';
 import {BrowserRouter as Router, Route} from "react-router-dom"
 import Postjob from "./components/Postjob"
 import Contact from './components/Contact';
@@ -91,7 +91,8 @@ class App extends React.Component {
             data: userdata
         })
          .then(response => {
-          alert("You Have Successfully Signed Up.Now Login to Continue.")
+          console.log(response);
+          alert("You Have Successfully Signed Up.Now Login to Continue.");
           this.setState({
             login: false,
             name: this.state.name,

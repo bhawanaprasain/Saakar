@@ -1,24 +1,9 @@
 import React, { Component } from "react"
-import {Link} from "react-router-dom"
 import "../styles/signup.css"
 import Footer from "./Footer"
 import Header from "./Header"
-import axios from "axios"
 
 class Signup extends Component{
-    constructor(props){
-        super(props)
-
-        // this.state = {
-        //     name: '',
-        //     email: '',
-        //     password: ''
-        // }
-
-        // this.handleInput = this.handleInput.bind(this)
-        // this.handleSubmit = this.handleSubmit.bind(this)
-    }
-
     // handleInput(e){
     //     this.setState({
     //         [e.target.name]: e.target.value

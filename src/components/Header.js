@@ -10,7 +10,8 @@ function Header(props){
           <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
               <div className="container-fluid">
                 
-                <a className="navbar-brand sakarlogo" href="index.html"></a>
+                {/* <a className="navbar-brand sakarlogo" href="/"></a> */}
+                <Link to="/" className="navbar-brand sakarlogo"></Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="oi oi-menu"></span> Menu
                 </button>
